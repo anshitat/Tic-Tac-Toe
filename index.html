@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bodyClassic">
+
+    <h1 id="textHeader" class="center">✨Tic Tac Toe✨</h1>
+
+    <form id="infoForm" class="center">
+        <p>Choose Your Theme here:</p>
+
+        <fieldset id="inputGroup1" class="inputGroup1">
+            <div>
+                <input type="radio" id='classic' class="radio-btn" name="inputGroup1" value="classic" checked>
+                <label class="for-radio-btn" for="classic">❌/⭕</label>
+            </div>
+
+            <div>
+                <input type="radio" id='goth' class="radio-btn" name="inputGroup1" value="goth">
+                <label class="for-radio-btn" for="goth">☠️/💀</label>
+            </div>
+
+            <div>
+                <input type="radio" id='weapons' class="radio-btn" name="inputGroup1" value="weapons">
+                <label class="for-radio-btn" for="weapons">⚔️/💣</label>
+            </div>
+
+        </fieldset>
+
+        <p>Choose Player:</p>
+
+        <fieldset id="inputGroup2">
+            <div>
+                <input class="radio-btn" type="radio" name="inputGroup2" value="X" id="X">
+                 <label class="for-radio-btn" for="X">X</label>
+            </div>
+            <div>
+                <input class="radio-btn" type="radio" name="inputGroup2" value="O" id="O">
+                <label class="for-radio-btn" for="O">O</label>
+            </div>
+        </fieldset>
+    </form>
+
+    <h2 id="playerName" class="center displayNone">You are: </h2>
+
+    <section class="turnContainer displayNone">
+        <div id="yourTurn" class="turnBox">Your Turn</div>
+        <button id="resetButton" class="turnBox" onclick="reset()">Reset</button>
+        <div id="compTurn" class="turnBox">Computer Turn</div>
+    </section>
+
+    <div class="afterBx">
+        <div id="whoWins"></div>
+    <div id="greetings"></div>
+    </div>
+
+    <div id="gameBoard" class="gameContainer displayNone">
+        <div class="item item-1" id="one">X/O</div>
+        <div class="item item-2" id="two">X/O</div>
+        <div class="item item-3" id="three">X/O</div>
+
+        <div class="item item-4" id="four">X/O</div>
+        <div class="item item-5" id="five">X/O</div>
+        <div class="item item-6" id="six">X/O</div>
+
+        <div class="item item-7" id="seven">X/O</div>
+        <div class="item item-8" id="eight">X/O</div>
+        <div class="item item-9" id="nine">X/O</div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
